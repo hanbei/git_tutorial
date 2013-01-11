@@ -9,46 +9,43 @@
 \titlepage
 \end{frame}
 
-%\begin{frame}{Geschichte}
-%\end{frame}
-
-\begin{frame}{Git vs. SVN (SVN)}
+\begin{frame}{Zentralisierter Workflow}
 \begin{figure} 
 \centering
-\includegraphics{images/18333fig0104-tn.png}
+\includegraphics{images/centralized-workflow.png}
+\end{figure}
+\begin{itemize}
+\pause \item Bekannt aus SVN
+\pause \item Git verhindert überschreiben von Daten
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Integration-Manager Workflow}
+\begin{figure} 
+\centering
+\includegraphics{images/integration-manager-workflow.png}
+\begin{itemize}
+\pause \item The project maintainer pushes to their public repository.
+\pause \item A contributor clones that repository and makes changes.
+\pause \item The contributor pushes to their own public copy.
+\pause \item The contributor sends the maintainer an e-mail asking them to pull changes.
+\pause \item The maintainer adds the contributor’s repo as a remote and merges locally.
+\pause \item The maintainer pushes merged changes to the main repository.
+\end{itemize}
 \end{figure}
 \end{frame}
 
-\begin{frame}{Git vs. SVN (Git)}
+\begin{frame}{Dictator and Lieutenant Workflow}
 \begin{figure} 
 \centering
-\includegraphics{images/18333fig0105-tn.png}
+\includegraphics[scale=0.6]{images/dictator-and-lieteutnant-workflow.png}
+\begin{itemize}
+\pause \item Regular developers work on their topic branch and rebase their work on top of master. The master branch is that of the dictator.
+\pause \item Lieutenants merge the developers’ topic branches into their master branch.
+\pause \item The dictator merges the lieutenants’ master branches into the dictator’s master branch.
+\pause \item The dictator pushes their master to the reference repository so the other developers can rebase on it.
+\end{itemize}
 \end{figure}
 \end{frame}
-
-\begin{frame}{Git vs. SVN (Git)}
-\end{frame}
-
-\begin{frame}{Standardworkflow (wie SVN)}
-git clone git://github.com/schacon/grit.git $\langle$directory$\rangle$
-\begin{figure} 
-\centering
-\includegraphics[scale=0.5]{images/18333fig0103-tn.png}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Standardworkflow (wie SVN)}
-git status
-\begin{figure} 
-\centering
-\includegraphics[scale=0.5]{images/18333fig0201-tn.png}
-\end{figure}
-\end{frame}
-
-
-\begin{frame}{Branching/Merging/Rebasing}
-\end{frame}
-
-
 
 \end{document}
