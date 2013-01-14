@@ -1,5 +1,14 @@
 \documentclass{beamer}
 \usepackage[utf8]{inputenc}
+\usepackage{listings} 
+\lstset{basicstyle=\footnotesize\ttfamily, breaklines=true}
+\lstset{frame=tb}
+
+%blue 60acd9ff
+%green 79ac5bff
+%blue2 96ccc2ff
+%pink deace7ff
+
 \usetheme{Singapore}
 \title[Git]{Introduction to Git}
 \author{Florian Schulz}
@@ -9,85 +18,7 @@
 \titlepage
 \end{frame}
 
-\begin{frame}{Feature Branches (1)}
-\begin{columns}[T]
-  \begin{column}{.45\textwidth}
-    \begin{block}{}
-      \includegraphics[scale=0.6]{images/feature-branches1.png}
-    \end{block}
-  \end{column}
-  \begin{column}{.1\textwidth}
-    \begin{block}{}
-      \pause $\longrightarrow$
-    \end{block}
-  \end{column}
-  \begin{column}{.45\textwidth}
-    \begin{block}{}  
-        \pause \includegraphics[scale=0.6]{images/feature-branches2.png}
-    \end{block}
-  \end{column}
-\end{columns}  
-\end{frame}
-
-\begin{frame}{Long-Running Branches}
-\begin{figure} 
-\centering
-  \includegraphics[scale=0.5]{images/long-running-branch.png}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Long-Running Branches}
-\begin{figure} 
-\centering
-  \includegraphics[scale=0.5]{images/long-running-branch2.png}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Long-Running Branches}
-\begin{figure} 
-\centering
-  \includegraphics[scale=0.5]{images/long-running-branch3.png}
-\end{figure}
-\end{frame}
-
-
-\begin{frame}{Zentralisierter Workflow}
-\begin{figure} 
-\centering
-\includegraphics{images/centralized-workflow.png}
-\end{figure}
-\begin{itemize}
-\pause \item Bekannt aus SVN
-\pause \item Git verhindert überschreiben von Daten
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Integration-Manager Workflow}
-\begin{figure} 
-\centering
-\includegraphics{images/integration-manager-workflow.png}
-\begin{itemize}
-\pause \item The project maintainer pushes to their public repository.
-\pause \item A contributor clones that repository and makes changes.
-\pause \item The contributor pushes to their own public copy.
-\pause \item The contributor sends the maintainer an e-mail asking them to pull changes.
-\pause \item The maintainer adds the contributor’s repo as a remote and merges locally.
-\pause \item The maintainer pushes merged changes to the main repository.
-\end{itemize}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Dictator and Lieutenant Workflow}
-\begin{figure} 
-\centering
-\includegraphics[scale=0.6]{images/dictator-and-lieteutnant-workflow.png}
-\begin{itemize}
-\pause \item Regular developers work on their topic branch and rebase their work on top of master. The master branch is that of the dictator.
-\pause \item Lieutenants merge the developers’ topic branches into their master branch.
-\pause \item The dictator merges the lieutenants’ master branches into the dictator’s master branch.
-\pause \item The dictator pushes their master to the reference repository so the other developers can rebase on it.
-\end{itemize}
-\end{figure}
-\end{frame}
+\input{commands}
+\input{workflows}
 
 \end{document}
