@@ -15,7 +15,7 @@
    version="1.1"
    inkscape:version="0.47 r22583"
    sodipodi:docname="long-running-branch.svg"
-   inkscape:export-filename="/home/fschulz/Documents/Vorträge/git-tutorial/images/long-running-branch.png"
+   inkscape:export-filename="/home/fschulz/Documents/Vorträge/git-tutorial/images/long-running-branch2.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
@@ -110,159 +110,74 @@
     <rect
        ry="26.247673"
        y="236.56476"
-       x="197.45636"
+       x="497.45636"
        height="67.330994"
        width="123.24996"
        id="rect3594"
-       style="fill:#79ac9f;fill-opacity:1;stroke:#000000;stroke-width:0.82524419000000004;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+       style="fill:#79ac9f;fill-opacity:1;stroke:#000000;stroke-width:0.82524419;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
     <text
        id="text3596"
        y="281.87866"
-       x="238.29228"
+       x="538.2923"
        style="font-size:16px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
        xml:space="preserve"><tspan
          style="font-size:32px"
          y="281.87866"
-         x="238.29228"
+         x="538.2923"
          id="tspan3598"
          sodipodi:role="line">D2</tspan></text>
     <rect
-       style="fill:#79ac9f;fill-opacity:1;stroke:#000000;stroke-width:0.82524419000000004;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#79ac9f;fill-opacity:1;stroke:#000000;stroke-width:0.82524419;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect3600"
        width="123.24996"
        height="67.330994"
-       x="357.45636"
+       x="657.45636"
        y="236.56476"
        ry="26.247673" />
     <text
        xml:space="preserve"
        style="font-size:16px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-       x="398.2923"
+       x="698.2923"
        y="281.87866"
        id="text3602"><tspan
          sodipodi:role="line"
          id="tspan3604"
-         x="398.2923"
+         x="698.2923"
          y="281.87866"
          style="font-size:32px">D3</tspan></text>
     <rect
        ry="26.247673"
        y="236.56476"
-       x="517.45636"
+       x="817.45636"
        height="67.330994"
        width="123.24996"
        id="rect3606"
-       style="fill:#79ac9f;fill-opacity:1;stroke:#000000;stroke-width:0.82524419000000004;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+       style="fill:#79ac9f;fill-opacity:1;stroke:#000000;stroke-width:0.82524419;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
     <text
        id="text3608"
        y="281.87866"
-       x="558.2923"
+       x="858.2923"
        style="font-size:16px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
        xml:space="preserve"><tspan
          style="font-size:32px"
          y="281.87866"
-         x="558.2923"
+         x="858.2923"
          id="tspan3610"
          sodipodi:role="line">D4</tspan></text>
-    <rect
-       style="fill:#c9ac5b;fill-opacity:1;stroke:#000000;stroke-width:0.82524419000000004;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       id="rect3612"
-       width="123.24996"
-       height="67.330994"
-       x="597.45636"
-       y="376.56476"
-       ry="26.247673" />
-    <text
-       xml:space="preserve"
-       style="font-size:16px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-       x="638.2923"
-       y="421.87866"
-       id="text3614"><tspan
-         sodipodi:role="line"
-         id="tspan3616"
-         x="638.2923"
-         y="421.87866"
-         style="font-size:32px">E5</tspan></text>
-    <rect
-       ry="26.247673"
-       y="376.56476"
-       x="757.45636"
-       height="67.330994"
-       width="123.24996"
-       id="rect3618"
-       style="fill:#c9ac5b;fill-opacity:1;stroke:#000000;stroke-width:0.82524419000000004;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
-    <text
-       id="text3620"
-       y="421.87866"
-       x="798.2923"
-       style="font-size:16px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-       xml:space="preserve"><tspan
-         style="font-size:32px"
-         y="421.87866"
-         x="798.2923"
-         id="tspan3622"
-         sodipodi:role="line">E6</tspan></text>
-    <rect
-       style="fill:#c9ac5b;fill-opacity:1;stroke:#000000;stroke-width:0.82524419000000004;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       id="rect3624"
-       width="123.24996"
-       height="67.330994"
-       x="917.45636"
-       y="376.56476"
-       ry="26.247673" />
-    <text
-       xml:space="preserve"
-       style="font-size:16px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-       x="958.2923"
-       y="421.87866"
-       id="text3626"><tspan
-         sodipodi:role="line"
-         id="tspan3628"
-         x="958.2923"
-         y="421.87866"
-         style="font-size:32px">E7</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
-       d="m 357.45636,270.23026 -36.75004,0"
+       d="m 657.45636,270.23026 -36.75004,0"
        id="path3630"
        inkscape:connector-type="polyline"
        inkscape:connection-start="#rect3600"
        inkscape:connection-end="#rect3594" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
-       d="m 517.45636,270.23026 -36.75004,0"
+       d="m 817.45636,270.23026 -36.75004,0"
        id="path3632"
        inkscape:connector-type="polyline"
        inkscape:connection-start="#rect3606"
        inkscape:connection-end="#rect3600" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
-       d="M 639.84391,376.56476 598.31877,303.89575"
-       id="path3634"
-       inkscape:connector-type="polyline"
-       inkscape:connection-start="#rect3612"
-       inkscape:connection-end="#rect3606" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
-       d="m 757.45636,410.23026 -36.75004,0"
-       id="path3636"
-       inkscape:connector-type="polyline"
-       inkscape:connection-start="#rect3618"
-       inkscape:connection-end="#rect3612" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
-       d="m 917.45636,410.23026 -36.75004,0"
-       id="path3638"
-       inkscape:connector-type="polyline"
-       inkscape:connection-start="#rect3624"
-       inkscape:connection-end="#rect3618" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
-       d="m 240.37829,236.56476 -42.5939,-76.66902"
-       id="path3640"
-       inkscape:connector-type="polyline"
-       inkscape:connection-start="#rect3594"
-       inkscape:connection-end="#rect2816" />
     <text
        xml:space="preserve"
        style="font-size:16px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
@@ -270,7 +185,7 @@
        y="410.30994"
        id="text5601"><tspan
          sodipodi:role="line"
-         id="tspan5603"></tspan></text>
+         id="tspan5603" /></text>
     <rect
        ry="26.247673"
        y="92.564743"
@@ -323,5 +238,12 @@
        inkscape:connector-type="polyline"
        inkscape:connection-start="#rect5613"
        inkscape:connection-end="#rect5607" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="M 545.05405,236.56476 513.10863,159.89574"
+       id="path2853"
+       inkscape:connector-type="polyline"
+       inkscape:connection-start="#rect3594"
+       inkscape:connection-end="#rect5613" />
   </g>
 </svg>
