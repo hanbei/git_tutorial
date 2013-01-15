@@ -1,4 +1,4 @@
-\begin{frame}{Feature Branches (1)}
+\begin{frame}{Feature Branches}
 \begin{columns}[T]
   \begin{column}{.45\textwidth}
     \begin{block}{}
@@ -64,12 +64,69 @@
 \begin{frame}{Zentralisierter Workflow}
 \begin{figure} 
 \centering
-\includegraphics[scale=0.6]{images/centralized-workflow.pdf}
+\includegraphics[scale=0.6]{images/centralized/centralized-workflow.pdf}
 \end{figure}
 \begin{itemize}
 \pause \item Bekannt aus SVN
 \pause \item Git verhindert überschreiben von Daten
 \end{itemize}
+\end{frame}
+
+\begin{frame}{Zentralisierter Workflow (Kommandos)}
+\begin{columns}[T]
+  \begin{column}{.5\textwidth}
+    \begin{block}{}  
+		\includegraphics<1>[scale=0.4]{images/centralized/centralized-workflow-clone.pdf}
+		\includegraphics<2>[scale=0.4]{images/centralized/centralized-workflow-work.pdf}
+		\includegraphics<3>[scale=0.4]{images/centralized/centralized-workflow-conflict.pdf}
+		\includegraphics<4>[scale=0.4]{images/centralized/centralized-workflow-clone.pdf}
+		\includegraphics<5>[scale=0.4]{images/centralized/centralized-workflow-push.pdf}
+    \end{block}
+  \end{column}
+  \begin{column}{.5\textwidth}
+    \begin{block}{}
+    	\begin{tiny}
+		\begin{itemize}
+		  \item \texttt{git clone <repository>}
+  		  \pause \item \texttt{git add <file>}
+  		  \item \texttt{git commit [-m"message"]}
+  		  \pause
+		  \pause \item \texttt{[git pull]}
+  		  \pause \item \texttt{git push}
+		\end{itemize}
+    	\end{tiny}		
+    \end{block}
+  \end{column}
+\end{columns}  
+\end{frame}
+
+\begin{frame}{Zentralisierter Workflow (Branching)}
+\begin{columns}[T]
+  \begin{column}{.5\textwidth}
+    \begin{block}{}  
+		\includegraphics<1>[scale=0.4]{images/centralized/centralized-workflow-branch-clone.pdf}
+		\includegraphics<2>[scale=0.4]{images/centralized/centralized-workflow-branch.pdf}
+		\includegraphics<3>[scale=0.4]{images/centralized/centralized-workflow-branch-master.pdf}
+		\includegraphics<4>[scale=0.4]{images/centralized/centralized-workflow-branch-merge.pdf}
+		\includegraphics<5>[scale=0.4]{images/centralized/centralized-workflow-branch-push.pdf}
+    \end{block}
+  \end{column}
+  \begin{column}{.5\textwidth}
+    \begin{block}{}
+    	\begin{tiny}
+		\begin{itemize}
+		  \item \texttt{git clone <repository>}
+  		  \pause \item \texttt{git checkout [-b] jira198}
+  		  \item \texttt{git add <file>}
+  		  \item \texttt{git commit [-m"message"]}
+  		  \pause \item \texttt{git checkout master}
+   		  \pause \item \texttt{git merge jira198}
+  		  \pause \item \texttt{git push}
+		\end{itemize}
+    	\end{tiny}		
+    \end{block}
+  \end{column}
+\end{columns}  
 \end{frame}
 
 \begin{frame}{Integration-Manager Workflow}
