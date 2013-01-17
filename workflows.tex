@@ -11,7 +11,7 @@
     \end{block}
   \end{column}
   \begin{column}{.45\textwidth}
-    \begin{block}{}  
+    \begin{block}{} 
         \pause \includegraphics[scale=0.4]{images/feature-branches2.pdf}
     \end{block}
   \end{column}
@@ -24,52 +24,63 @@
 \end{frame}
 
 \begin{frame}{Long-Running Branches}
-\begin{figure} 
-\centering
-  \includegraphics[scale=0.5]{images/long-running-branch.pdf}
-\end{figure}
-\begin{tiny}
-\pause @branch \\
-\pause \texttt{git add ...} \\
-\pause \texttt{git commit} \\
-\end{tiny}
+  \begin{figure}
+  \centering
+    \includegraphics[scale=0.5]{images/long-running-branch.pdf}
+  \end{figure}
+  \tiny
+  \begin{itemize}
+  \pause \item \texttt{git checkout -b branch}
+    \begin{itemize}
+	  \pause \item \tiny \texttt{ändere Datei}
+	  \pause \item \texttt{git add Datei}
+	  \pause \item \texttt{git commit}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Long-Running Branches}
+  \begin{figure} 
+  \centering
+    \includegraphics[scale=0.5]{images/long-running-branch2.pdf}
+  \end{figure}
+  \tiny
+  \begin{itemize}
+    \pause \item \texttt{git checkout master}
+    \begin{itemize}
+      \pause \item \tiny \texttt{ändere "file"}
+      \pause \item \texttt{git add file} 
+      \pause \item \texttt{git commit}
+    \end{itemize}
+  \end{itemize}
 \end{frame}
 
 \begin{frame}{Long-Running Branches}
-\begin{figure} 
-\centering
-  \includegraphics[scale=0.5]{images/long-running-branch2.pdf}
-\end{figure}
-\begin{tiny}
-\pause @master \\
-\pause \texttt{git add ...} \\
-\pause \texttt{git commit} \\
-\end{tiny}
-
+  \begin{figure} 
+  \centering
+    \includegraphics[scale=0.4]{images/long-running-branch3.pdf}
+  \end{figure}
+  \tiny
+  \begin{itemize}
+    \pause \item \texttt{git checkout branch}
+    \pause \item \texttt{git rebase master}
+  \end{itemize}
 \end{frame}
 
-\begin{frame}{Long-Running Branches}
-\begin{figure} 
-\centering
-  \includegraphics[scale=0.4]{images/long-running-branch3.pdf}
-\end{figure}
-\begin{tiny}
-\pause @branch \\
-\pause \texttt{git rebase master} \\
-\end{tiny}
-
-\end{frame}
-
+%\begin{frame}{Merge Konflikte}
+%  bla
+%\end{frame}
 
 \begin{frame}{Zentralisierter Workflow}
-\begin{figure} 
-\centering
-\includegraphics[scale=0.6]{images/centralized/centralized-workflow.pdf}
-\end{figure}
-\begin{itemize}
-\pause \item Bekannt aus SVN
-\pause \item Git verhindert überschreiben von Daten
-\end{itemize}
+  \begin{figure} 
+  \centering
+    \includegraphics[scale=0.6]{images/centralized/centralized-workflow.pdf}
+  \end{figure}
+  \begin{itemize}
+    \pause \item Bekannt aus SVN
+    \pause \item Git verhindert überschreiben von Daten
+  \end{itemize}
 \end{frame}
 
 \begin{frame}{Zentralisierter Workflow (Kommandos)}
@@ -88,7 +99,8 @@
     	\begin{tiny}
 		\begin{itemize}
 		  \item \texttt{git clone <repository>}
-  		  \pause \item \texttt{git add <file>}
+  		  \pause \item change "file"
+		  \item \texttt{git add <file>}
   		  \item \texttt{git commit [-m"message"]}
   		  \pause
 		  \pause \item \texttt{[git pull]}
@@ -117,6 +129,7 @@
 		\begin{itemize}
 		  \item \texttt{git clone <repository>}
   		  \pause \item \texttt{git checkout [-b] jira198}
+		  \item \texttt{change "file"}
   		  \item \texttt{git add <file>}
   		  \item \texttt{git commit [-m"message"]}
   		  \pause \item \texttt{git checkout master}
@@ -130,29 +143,29 @@
 \end{frame}
 
 \begin{frame}{Integration-Manager Workflow}
-\begin{figure} 
-\centering
-\includegraphics[scale=0.6]{images/integration-manager-workflow.pdf}
-\begin{itemize}
-\pause \item The project maintainer pushes to their public repository.
-\pause \item A contributor clones that repository and makes changes.
-\pause \item The contributor pushes to their own public copy.
-\pause \item The contributor sends the maintainer an e-mail asking them to pull changes.
-\pause \item The maintainer adds the contributor’s repo as a remote and merges locally.
-\pause \item The maintainer pushes merged changes to the main repository.
-\end{itemize}
-\end{figure}
+  \begin{figure} 
+  \centering
+    \includegraphics[scale=0.6]{images/integration-manager-workflow.pdf}
+  \end{figure}
+  \begin{itemize}
+    \pause \item The project maintainer pushes to their public repository.
+    \pause \item A contributor clones that repository and makes changes.
+    \pause \item The contributor pushes to their own public copy.
+    \pause \item The contributor sends the maintainer an e-mail asking them to pull changes.
+    \pause \item The maintainer adds the contributor’s repo as a remote and merges locally.
+    \pause \item The maintainer pushes merged changes to the main repository.
+  \end{itemize}
 \end{frame}
 
 \begin{frame}{Dictator and Lieutenant Workflow}
-\begin{figure} 
-\centering
-\includegraphics[scale=0.3]{images/dictator-and-lieteutnant-workflow.pdf}
-\begin{itemize}
-\pause \item Regular developers work on their topic branch and rebase their work on top of master. The master branch is that of the dictator.
-\pause \item Lieutenants merge the developers’ topic branches into their master branch.
-\pause \item The dictator merges the lieutenants’ master branches into the dictator’s master branch.
-\pause \item The dictator pushes their master to the reference repository so the other developers can rebase on it.
-\end{itemize}
-\end{figure}
+  \begin{figure} 
+  \centering
+    \includegraphics[scale=0.3]{images/dictator-and-lieteutnant-workflow.pdf}
+  \end{figure}    
+  \begin{itemize}
+    \pause \item Regular developers work on their topic branch and rebase their work on top of master. The master branch is that of the dictator.
+    \pause \item Lieutenants merge the developers’ topic branches into their master branch.
+    \pause \item The dictator merges the lieutenants’ master branches into the dictator’s master branch.
+    \pause \item The dictator pushes their master to the reference repository so the other developers can rebase on it.
+  \end{itemize}
 \end{frame}
