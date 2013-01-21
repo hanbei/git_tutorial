@@ -2,7 +2,41 @@
 \begin{columns}[T]
   \begin{column}{.45\textwidth}
     \begin{block}{}
-      \includegraphics[scale=0.4]{images/feature-branches1.pdf}
+      \includegraphics<1>[scale=0.4]{images/branches/master-start.pdf}
+      \includegraphics<2>[scale=0.4]{images/branches/first-branch.pdf}
+	  \includegraphics<3>[scale=0.4]{images/branches/back-to-master.pdf}
+	  \includegraphics<4>[scale=0.4]{images/branches/switch-branch.pdf}
+	  \includegraphics<5>[scale=0.4]{images/branches/work-branch.pdf}
+	  \includegraphics<6>[scale=0.4]{images/branches/work-master.pdf}
+	  \includegraphics<7>[scale=0.4]{images/branches/branch-merge.pdf}
+    \end{block}
+  \end{column}
+  \begin{column}{.55\textwidth}
+    \begin{block}{} 
+    \begin{tiny}
+    	\begin{itemize}
+    	  \item \texttt{@master}
+    	  \pause \item \texttt{git checkout -b iss91}
+    	  \item \texttt{git commit}
+      	  \pause \item \texttt{git checkout master}
+      	  \pause \item \texttt{git commit}
+      	  \item \texttt{git checkout iss91}
+      	  \pause \item \texttt{git commit}
+		  \pause \item \texttt{git checkout master}
+		  \pause \item \texttt{git commit}
+		  \item \texttt{git merge iss91}
+		\end{itemize}
+	  \end{tiny}
+    \end{block}
+  \end{column}
+\end{columns}  
+\end{frame}
+
+\begin{frame}{Feature Branches}
+\begin{columns}[T]
+  \begin{column}{.45\textwidth}
+    \begin{block}{}
+      \includegraphics[scale=0.4]{images/branches/feature-branches1.pdf}
     \end{block}
   \end{column}
   \begin{column}{.1\textwidth}
@@ -12,11 +46,12 @@
   \end{column}
   \begin{column}{.45\textwidth}
     \begin{block}{} 
-        \pause \includegraphics[scale=0.4]{images/feature-branches2.pdf}
+        \pause \includegraphics[scale=0.4]{images/branches/feature-branches2.pdf}
     \end{block}
   \end{column}
 \end{columns}  
 \begin{tiny}
+\pause \texttt{@master} \\
 \pause \texttt{git merge dumbidea} \\
 \pause \texttt{git merge iss91v2} \\
 \pause \texttt{git branch -D iss91} \\
