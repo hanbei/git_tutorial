@@ -1,0 +1,32 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{listings} 
+\lstset{basicstyle=\footnotesize\ttfamily, breaklines=true}
+\lstset{frame=tb}
+
+%blue 60acd9ff
+%green 79ac5bff
+%blue2 96ccc2ff
+%pink deace7ff
+
+\usetheme{Singapore}
+\title[Git]{Introduction to Git}
+\author{Florian Schulz}
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\begin{itemize}
+  \item remote branch auschecken
+  \item Warum ist ein Rebase kein Fastforward
+  \item Merge mit Konflikten
+\end{itemize}
+\end{frame}
+
+\input{commands}
+\input{workflows}
+
+\end{document}
